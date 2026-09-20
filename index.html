@@ -94,7 +94,7 @@ document.getElementById("tokenHint").textContent = token
   : "⚠ No token in URL. Open this page as  https://YOUR-SITE.vercel.app/#/YOUR-TOKEN";
 
 // --- Firebase config: filled in by you (3 constants) ----------
-const FB_BASE   = "PASTE_YOUR_FIREBASE_DB_URL";   // e.g. mine-abc123.firebaseio.com (NO https://)
+const FB_BASE   = "https://mine-2425-default-rtdb.asia-southeast1.firebasedatabase.app";   // e.g. mine-abc123.firebaseio.com (NO https://)
 const FB_PREFIX = "";                              // bridge writes at the DB root; leave empty
 
 const url = (path) => `https://${FB_BASE}${FB_PREFIX}${path}.json?auth=${encodeURIComponent(token)}`;
